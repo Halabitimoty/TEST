@@ -19,6 +19,7 @@ mongoose
   });
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use("/home", userRoute);
 app.use("/item", shopRoute);
 
