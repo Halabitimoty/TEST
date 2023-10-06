@@ -26,6 +26,7 @@ route.post("/", async (req, res) => {
 
   res.json({
     isRequestSuccesful: true,
+    message: "Item  Added Successfully",
     shopItem,
   });
 });
