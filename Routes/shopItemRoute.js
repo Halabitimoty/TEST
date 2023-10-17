@@ -22,6 +22,7 @@ route.post("/", async (req, res) => {
     name: req.body.name,
     description: req.body.description,
     isInStock: req.body.isInStock,
+    price: req.body.price,
   });
 
   res.json({
