@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "serve": "node index",
-    "test": "jest"
+    "test": "npx jest"
   },
   "keywords": [],
   "author": "",

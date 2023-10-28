@@ -46,7 +46,7 @@ const updateItems = async (req, res) => {
 
 const deleteItemById = async (req, res) => {
   const item = await shopItemCollection.findById(req.params.id);
-  console.log(item);
+
   if (item === null) {
     res.status(401).send("Item not present");
     return;

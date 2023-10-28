@@ -14,6 +14,6 @@ route.get("/", isUserLoggedIn, getAllitems);
 route.get("/:id", isUserLoggedIn, getItemsbyId);
 route.post("/", isUserLoggedIn, addItems);
 route.patch("/:id", isUserLoggedIn, updateItems);
-route.delete("/:id", adminsOnly, deleteItemById);
+route.delete("/:id", isUserLoggedIn, adminsOnly, deleteItemById);
 
 module.exports = route;
