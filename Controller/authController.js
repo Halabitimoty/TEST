@@ -66,7 +66,7 @@ const deleteUser = async (req, res) => {
   try {
     const { userId, role } = req.decoded;
 
-    if (role !== "admin") return res.status(401).send("not-authorized");
+    // if (role !== "admin") return res.status(401).send("not-authorized");
 
     const user = await userCollection.findByIdAndDelete(userId);
     res.send({
